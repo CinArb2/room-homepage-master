@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+    
+  <header class="header">
+    <a href="#" class="header__logo-link">
+      <img class="header__logo-img" src="./images/logo.svg" alt="">
+    </a>
+    <button class="header__hamb">
+      <img class="header__hamb-icon" src="./images/icon-hamburger.svg">
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-items">
+          <a href="#" class="nav__list-links">home</a>
+        </li>
+        <li class="nav__list-items">
+          <a href="#" class="nav__list-links">shop</a>
+        </li>
+        <li class="nav__list-items">
+          <a href="#" class="nav__list-links">about</a>
+        </li>
+        <li class="nav__list-items">
+          <a href="#" class="nav__list-links">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section class="carousel">
+      <div class="carousel__track-container">
+        <div class="carousel__track">
+          <div class="carousel__slide current">
+            <div class="carousel__img-container">
+              <img  class="carousel__img mobile" src="./images/mobile-image-hero-1.jpg" alt="">
+              <img class="carousel__img desktop" src="./images/desktop-image-hero-1.jpg" alt="">
+            </div>
+            <section class="carousel__content">
+              <div class="carousel__content-wrapper">
+              <h2 class="carousel__content-title">Discover innovative ways to decorate</h2>
+              <p class="carousel__content-text">We provide unmatched quality, comfort, and style for property owners across the country.Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+              <button class="carousel__content-btn"> shop now </button>
+              </div>
+            </section>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__img-container">
+              <img class="carousel__img mobile" src="./images/mobile-image-hero-2.jpg" alt="">
+              <img class="carousel__img desktop" src="./images/desktop-image-hero-2.jpg" alt="">
+            </div>
+            <section class="carousel__content">
+              <div class="carousel__content-wrapper">
+              <h2 class="carousel__content-title">We are available all across the globe</h2>
+              <p class="carousel__content-text">With stores all over the world, it's easy for you to find furniture for your home or place of business.
+              Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+              store locator. Any questions? Don't hesitate to contact us today.</p>
+              <button class="carousel__content-btn">shop now</button>
+              </div>
+            </section>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__img-container">
+              <img class="carousel__img mobile" src="./images/mobile-image-hero-3.jpg" alt="">
+              <img class="carousel__img desktop" src="./images/desktop-image-hero-3.jpg" alt="">
+            </div>
+            <section class="carousel__content">
+              <div class="carousel__content-wrapper">
+              <h2 class="carousel__content-title">Manufactured with the best materials</h2>
+              <p class="carousel__content-text">Our modern furniture store provide a high level of quality. Our company has invested in
+                advanced technology
+                to ensure that every product is made as perfect and as consistent as possible. With three decades of
+                experience in this industry, we understand what customers want for their home and office.</p>
+              <button class="carousel__content-btn">shop now</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn btnPrev" type="button" disabled>
+          <img class="btn__img" src="./images/icon-angle-left.svg" alt="">
+        </button>
+        <button class="btn btnNext" type="button">
+          <img class="btn__img"  src="./images/icon-angle-right.svg" alt="">
+        </button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__img-container">
+        <img  class="about__img" src="./images/image-about-dark.jpg" alt="">
+      </div>
+      <section class="about__content">
+        <h2 class="about__title">About our furniture</h2>
+        <p class="about__text">Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.</p>
+        </section>
+      <div class="about__img-container">
+        <img class="about__img" src="./images/image-about-light.jpg" alt="">
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Cindy Arbelaez</a>.</p>
+  </footer>
+  <script src="./menu&carousel.js"></script>
+</body>
+</html>
