@@ -99,28 +99,18 @@ let btnContainer = document.querySelector('.btn-container');
 let containerActive = document.querySelector('.nav__list');
 let iconBtn = document.querySelector('.header__hamb');
 let nav = document.querySelector('.header');
-let nav_img = document.querySelector('.header__hamb-icon')
-
-//load
-
-nav_img.classList.add('open');
-
-//click
 
 iconBtn.addEventListener('click', () => {
-  containerActive.classList.toggle('translate');
   nav.classList.toggle('overlay');
-
-  if (nav_img.classList.contains('open')) {
-    nav_img.src = "./images/icon-close.svg";
-    nav_img.classList.add('close')
-    nav_img.classList.remove('open')
+  if (iconBtn.getAttribute('data-status') === 'close') {
+    containerActive.setAttribute('data-visible', 'true');
+    iconBtn.setAttribute('data-status', 'open');
   } else {
-    nav_img.src = "./images/icon-hamburger.svg";
-    nav_img.classList.remove('close')
-    nav_img.classList.add('open')
+    containerActive.setAttribute('data-visible', 'false');
+    iconBtn.setAttribute('data-status', 'close');
   }
 })
+
 
 // scroll
 window.addEventListener('scroll', (e) => {
